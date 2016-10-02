@@ -24,19 +24,19 @@ body {
 }
 
 .portfolio {
-	margin-top: 8%;
+	margin-top: 12%;
 	margin-bottom: 2%;
 }
 
 .banner-quote {
 	max-width: 72em;
-	margin: 0 auto 20px;
+	margin: 0 auto 40px;
 }
 
 .banner-quote p {
 	color: #fff;
 	text-align: center;
-	font-size: 30px;
+	font-size: 36px;
 	margin-bottom: 5px;
 	font-family: 'Shadows Into Light', cursive;
 }
@@ -69,7 +69,7 @@ body {
 
 .banner-quote span {
 	color: #fff;
-	font-size: 22px;
+	font-size: 32px;
 	float:right;
 	margin-top: 5px;
 	margin-right: 9%;
@@ -82,6 +82,45 @@ body {
 
 .closeQuote {
 	transform: rotate(180deg);
+}
+
+.banner-buttons {
+  max-width: 24em;
+  margin: 0 auto;
+}
+
+.banner-buttons .btn {
+  border-radius: 0px;
+  background: inherit;
+  font-size: 18px;
+  padding: 8px 16px;
+  color: #fff;
+  width: 45%;
+  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+}
+
+.banner-buttons .btn:hover {
+  background: #f1f1f1;
+  color: #000;
+}
+
+.rocket-img {
+  position: relative;
+  display: none;
+}
+
+.rocket-img img{
+  width: 15%;
+  transform: rotate(-90deg);
+}
+
+.personal-photo img {
+  display: none;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,1);
 }
 
 .star {
@@ -165,7 +204,16 @@ body {
 }
 
 .navbar-nav {
-	margin-left: 28%;
+	margin-left: 22%;
+  /*margin-left: 16; ---when personal photo is present---*/
+}
+
+.navbar-nav>li {
+  /*margin: 24px 0; ---when personal photo is present---*/
+}
+
+.navbar-nav>.personal-photo {
+  margin: 10px 0;
 }
 
 .navbar-inverse .navbar-nav li a {
@@ -183,11 +231,11 @@ body {
 .about-me {
 	width: 100%;
 	background: #295AAA;
-	height: 754px;
+	height: 100%;
 }
 
 .about-header {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .about-header h3 {
@@ -206,6 +254,18 @@ body {
 
 .about-header span {
 	font-size: 18px;
+}
+
+.about-info {
+  max-width: 48em;
+  margin: 10px auto 30px; 
+}
+
+.about-info p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .about-content {
@@ -254,37 +314,6 @@ body {
 	opacity: 0.35;
 }
 
-.banner-buttons {
-	max-width: 24em;
-	margin: 0 auto;
-}
-
-.banner-buttons .btn {
-	border-radius: 0px;
-	background: inherit;
-	font-size: 18px;
-	padding: 8px 16px;
-	color: #fff;
-	width: 50%;
-	display: inline;
-	font-weight: 200;
-	font-family: 'Lato', sans-serif;
-}
-
-.banner-buttons .btn:hover {
-	background: #f1f1f1;
-	color: #000;
-}
-
-.rocket-img {
-	position: relative;
-}
-
-.rocket-img img{
-	width: 15%;
-	transform: rotate(-90deg);
-}
-
 .projects {
 	background: #f9f9f9;
 }
@@ -316,17 +345,17 @@ body {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	height: 98%;
+	height: 96.8%;
 	width: 4px;
 	background: #777;
-	margin: 30px auto;
+	margin: 25px auto;
 }
 
 #projects-timeline {
 	position: relative;
-    padding: 2em 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .timeline-icon {

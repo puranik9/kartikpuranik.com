@@ -14,7 +14,6 @@ jQuery(document).ready(function($){
 	    $('#shrinkable-nav').removeClass('shrink', 600);
 	  }
 	  $('body').scrollspy({ target: '#shrinkable-nav' });
-	  $('.rocket-img').animate({right: '250px'}, 1000);
 	});
 
 	$(function () {
