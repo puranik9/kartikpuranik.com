@@ -12,10 +12,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Boogaloo|Nothing+You+Could+Do|Bungee|Permanent+Marker|Luckiest+Guy|Paytone+One|Asul|Sigmar+One|VT323" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 </head>
@@ -36,20 +39,20 @@
 			    </button>
 			</div>
 			<div class="navbar-collapse collapse" id="navbarCollapse">
-				<ul class="nav navbar-nav">
-					<li class="active">
+				<ul class="nav navbar-nav" id="myNavbar">
+					<li class="active lift-up">
 						<a href="#myPortfolio">Home</a>
 					</li>
-					<li class="">
+					<li class="lift-up">
 						<a href="#about">About Me</a>
 					</li>
 					<li class="personal-photo">
-						<img src="images/kartikpuranik.jpg" />
+						<img id="myPhoto" src="images/kartikpuranik.jpg" />
 					</li>
-					<li class="">
+					<li class="lift-up">
 						<a href="#myProjects">Projects</a>
 					</li>
-					<li class="">
+					<li class="lift-up">
 						<a href="#contactMe">Contact</a>
 					</li>
 				</ul>
@@ -79,11 +82,14 @@
 			</div>
 			<div class="row banner-buttons text-center">
 				<a class="btn btn-default" href="#contactMe">Contact Me</a>
-				<a class="btn btn-default" href="#">View Resume</a>
+				<a class="btn btn-default" href="Kartik_Puranik_Resume.pdf">View Resume</a>
 			</div>
 		</div>
 		<div class="rocket-img"> 
 			<img class="pull-right" src="images/rocket.png" />
+		</div>
+		<div class="down-arrow">
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
 		</div>
 	</div>
 </section>
@@ -94,7 +100,7 @@
 	<div class="about-me" id="about">
 		<div class="container">
 			<div class="about-header">
-				<h3>Profile</h3>
+				<h3>I am Kartik</h3>
 				<!--<p><q>If opportunity does not knock, build a door</q> <br />
 					<span><i>- Milton Berle</i></span></p>-->
 			</div>
@@ -102,49 +108,56 @@
 				<p> Brought to this exciting world on November 9th, 1995 in a tiny island known as Bahrain, I constantly strive to enhance my knowledge and skills in fields I am deeply passionate about.</p> 
 				<p> After my time in Bahrain for 16 years, I moved to Bengaluru, India to complete my International Baccalaureate with higher level subjects being Maths, Physics & Economics. This was a game-changing experience for me as I stayed in a boarding school and the IB syllabus was truly challenging. Nevertheless, it developed me to be who I am today and I am extremely grateful to everyone who made that happen.</p>
 			</div>
+			<div class="contact-line"></div>
 		</div>
 		<div class="about-content">
 			<div class="row">
 				<div class="col-sm-4" id="education">
 					<div class="item-circle">
 						<img src="images/mcgill.jpg" />
-					</div>
-					<p>Bachelor of Computer Engineering at McGill University <br />
+						<h4>Education</h4>
+						<p>Bachelor of Computer Engineering at McGill University <br />
 						Expected to graduate by December 2017</p>
+					</div>
 				</div>
 				<div class="col-sm-4" id="interests">
 					<div class="item-circle">
-						<img src="images/technology.jpg" />							
+						<img src="images/technology.jpg" />
+						<h4>Technology</h4>
+						<p>Deeply passionate about Front-End Development and IoT</p>							
 					</div>
-					<p>Deeply passionate about Front-End Development and IoT</p>
 				</div>
 				<div class="col-sm-4" id="skills">
 					<div class="item-circle">
-						<img src="images/programming.jpg" />				
-					</div>
-					<p>Languages <span>include</span> Javascript, HTML, CSS, Java <br />
-						Libraries & Frameworks <span>include</span> Bootstrap, Foundation, jQuery</p>
+						<img src="images/programming.jpg" />
+						<h4>Programming Skills</h4>
+						<p>Languages <span>include</span> Javascript, HTML, CSS, Java <br />
+						Libraries & Frameworks <span>include</span> Bootstrap, Foundation, jQuery</p>				
+					</div>				
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4" id="experience">
 					<div class="item-circle">
 						<img src="images/office.jpg" />
+						<h4>Current Work</h4>
+						<p>Currently a part-time Web Developer for FixMeStick, headquartered in Montreal, CA</p>
 					</div>
-					<p>Currently a part-time Web Developer for FixMeStick, headquartered in Montreal, CA</p>
 				</div>
 				<div class="col-sm-4" id="activities">
 					<div class="item-circle">
 						<img src="images/activities.jpg" />
-					</div>
-					<p>Strong interests in Soccer, Squash & Cricket <br />
+						<h4>Activities & Interests</h4>
+						<p>Strong interests in Soccer, Squash & Cricket <br />
 						Enjoy greatly outdoor activities like Hiking, Canoeing, Kayaking</p>
+					</div>
 				</div>
 				<div class="col-sm-4" id="awards">
 					<div class="item-circle">
 						<img src="images/montreal.jpg" />
+						<h4>Scholarships & Awards</h4>
+						<p>Merit List Student throughout High School.</p>
 					</div>
-					<p>Merit List Student throughout High School.</p>
 				</div>
 			</div>
 		</div>
@@ -161,46 +174,80 @@
 				<p><q>If opportunity does not knock, build a door</q> <br />
 					<span><i>- Milton Berle</i></span></p>
 			</div>
+			<div class="contact-line"></div>
 			<section id="projects-timeline">
 				<div class="timeline">
 					<div class="timeline-block">
-						<div class="timeline-icon"></div>
+						<div class="timeline-icon">
+							<img class="icon-image laptop-icon" src = "images/laptop.png" />
+						</div>
 						<div class="timeline-content panelRed">
-							<h2>FixMeStick Website <span>(June - August 2016)</span></h2>
+							<h2>FixMeStick Website </h2><span>June - August 2016</span>
 							<p>FixMeStick is an external, hardware device, for PC & Mac, that runs before your computer starts enabling it to remove viruses, spyware, trojans, rootkits, and malware that anti-virus programs often cannot. At FixMeStick, I redesigned and deployed the latest version of the website using Bootstrap, HTML, CSS & JavaScript. This lead to an increase in conversion rates, which drives me further to develop changes regularly and run A/B tests to prove validity of design choice. </p>						
 						</div>
+						<div class="timeline-images">
+							<img class="fixmestick-img web1" src="images/fixmestick-web.png" />
+							<img class="fixmestick-img web2" src="images/fixmestick-web-2.png" />
+							<img class="fixmestick-img web3" src="images/fixmestick-web-3.png" />
+						</div>
 					</div>
 					<div class="timeline-block">
-						<div class="timeline-icon"></div>
+						<div class="timeline-icon">
+							<img class="icon-image vr-icon" src = "images/virtual-reality.png" />
+						</div>
 						<div class="timeline-content panelBlue">
-							<h2>Virtual Resuscitation at WearHacks Toronto - Team Divrse <span>(June 2015)</span></h2>
+							<h2>Virtual Resuscitation at WearHacks Toronto - Team Divrse</h2> <span>June 2015</span>
 							<p>Most people who experience cardiac arrest at home, work or in a public location die because they don't receive immediate CPR from someone on the scene. This is mostly due to lack of training and confidence from surrounding bystanders. Our system uses wearable technology to effectively teach CPR and save lives. 
-							diVRse consist of 8 passionate team members wanting to reach out to the rest of the world all with the aim of providing a better future. Virtual Rescuscitation is an improved method in teaching CPR. We are using the Oculus Rift to simulate a virtual, 3-dimensional CPR training environment and tracking responder's actions using motion control with Myo while providing visual feedback.
-
-							How I contributed: 
-							• Developed orientation controls source code in Lua for controlling the Myo to carry out the right commands after reading human gestures
-							• Networked and enhanced interest for future hackathons; seeked guidance from mentors who appreciated the concept and motivated us throughout</p>
+							diVRse consist of 8 passionate team members wanting to reach out to the rest of the world all with the aim of providing a better future. Virtual Rescuscitation is an improved method in teaching CPR. We are using the Oculus Rift to simulate a virtual, 3-dimensional CPR training environment and tracking responder's actions using motion control with Myo while providing visual feedback.</p>
+							<p class="no-margin">How I contributed: </p>
+							<ul>
+								<li>Developed orientation controls source code in Lua for controlling the Myo to carry out the right commands after reading human gestures.</li>
+								<li>Networked and enhanced interest for future hackathons; seeked guidance from mentors who appreciated the concept and motivated us throughout.</li>
+							</ul>
+						</div>
+						<div class="timeline-images">
+							<img class="divrse" src="images/divrse.png" />
+							<img class="divrse divrse-oculus" src="images/divrse-2.jpg" />
+							<img class="divrse divrse-myo" src="images/divrse-3.jpg" />
 						</div>
 					</div>
 					<div class="timeline-block">
-						<div class="timeline-icon"></div>
+						<div class="timeline-icon">
+							<img class="icon-image robot-icon" src = "images/robot.png" />
+						</div>
 						<div class="timeline-content panelYellow">
-							<h2>HungryBot - Autonomous Robot Design Project (Design Principles & Methods) <span>September - December 2015</span></h2>
-							<p>HungryBot is an autonomous Lego robot, designed, built and programmed to compete in a grid version of Capture the Flag. This project helped us gain insight on software and mechanical design in robotics and improved our skills in Java programming. 
-
-							How I contributed:
-							• Built a simple and robust mechanical design for HungryBot, with a strong claw mechanism to capture the flags. Contributed in source code of navigation, odometer and obstacle avoidance modules. 
-							• Regularly underwent testing for HungryBot, ensuring that the modules were generating valid outputs. Additionally, completed a chunk of the documentation required for the mechanical and the software divisions. </p>						
+							<h2>HungryBot Autonomous Robot Design Project - Design Principles & Methods</h2><span>September - December 2015</span>
+							<p>HungryBot is an autonomous Lego robot, designed, built and programmed to compete in a grid version of Capture the Flag. This project helped us gain insight on software and mechanical design in robotics and improved our skills in Java programming. </p>
+							<p class="no-margin">How I contributed:</p>
+							<ul>
+								<li>Built a simple and robust mechanical design for HungryBot, with a strong claw mechanism to capture the flags. Contributed in source code of navigation, odometer and obstacle avoidance modules. </li>
+								<li>Regularly underwent testing for HungryBot, ensuring that the modules were generating valid outputs. Additionally, completed a chunk of the documentation required for the mechanical and the software divisions.</li>
+							</ul>													
+						</div>
+						<div class="timeline-images">
+							<img class="robot" src="images/robot-main.jpg" />
+							<img class="robot robot-vertical" src="images/robot-main4.jpg" />
+							<img class="robot robot-spread" src="images/robot-main3.jpg" />
+							<img class="robot robot-horizontal" src="images/robot-main5.jpg" />
+							<img class="robot lego" src="images/lego.png" />
 						</div>
 					</div>
 					<div class="timeline-block">
-						<div class="timeline-icon"></div>
+						<div class="timeline-icon">
+							<img class="icon-image computer-icon" src = "images/computer.png" />
+						</div>
 						<div class="timeline-content panelGreen">
-							<h2>Bomberman - Intro to Software Engineering <span>September - December 2014</span></h2>
-							<p>Bomberman is a strategic, maze-based video game in which the general goal throughout is to complete the levels by strategically placing bombs in order to kill enemies and destroy obstacles. In this project, I was part of a team of five members where we were required to design and develop the Bomberman game in Java and Spring technologies, and follow software engineering design principles and requirements. 
-
-							• Co-designed and developed the UI in Java using MVC architecture
-							• Mainly involved in the documentation and testing sections of the project</p>	
+							<h2>Bomberman - Introduction to Software Engineering </h2><span>September - December 2014</span>
+							<p>Bomberman is a strategic, maze-based video game in which the general goal throughout is to complete the levels by strategically placing bombs in order to kill enemies and destroy obstacles. In this project, I was part of a team of five members where we were required to design and develop the Bomberman game in Java and Spring technologies, and follow software engineering design principles and requirements. </p>
+							<p class="no-margin">How I contributed:</p>
+							<ul>
+								<li>Co-designed and developed the UI in Java using MVC architecture.</li>
+								<li>Mainly involved in the documentation and testing sections of the project</li>
+							</ul>	
+						</div>
+						<div class="timeline-images">
+							<img class="bomberman" src="images/bomberman.png" />
+							<img class="bomberman bomberman-mvc" src="images/bomberman-2.png" />
 						</div>
 					</div>
 					<!--<div class="timeline-block">
@@ -226,7 +273,8 @@
 				<h3>Contact</h3>
 				<p>I look forward to hearing from you. </p>
 			</div>
-			<form>
+			<div class="contact-line"></div>
+			<form action="mailto:kartik.karkala@mail.mcgill.ca" method="post" enctype="text/plain">
 				  <div class="form-group">
 				    <input type="text" class="form-control" placeholder="Name">
 				  </div>
@@ -251,6 +299,8 @@
 	<div class="footer-container">
 		<div class="container">
 			<p>Developed with coffee <i class="fa fa-coffee" aria-hidden="true" style="color: #916512;"></i> and love <i class="fa fa-heart" aria-hidden="true" style="color: #C1272D;"></i> by Kartik Puranik Karkala</p>
+		</div>
+	</div>
 </footer>
 
 <!-- Footer ends here -->
