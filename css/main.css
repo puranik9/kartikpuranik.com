@@ -5,6 +5,10 @@ html {
 
 body {
 	position: relative;
+  overflow-x: hidden;
+}
+
+nav {
 }
 
 .portfolio-banner {
@@ -18,27 +22,27 @@ body {
 }
 
 .portfolio {
-	margin-top: 8%;
+	margin-top: 3%;
 	margin-bottom: 2%;
 }
 
 .banner-quote {
-	max-width: 72em;
+	max-width: 52em;
 	margin: 0 auto 20px;
 }
 
 .banner-quote p {
 	color: #fff;
 	text-align: center;
-	font-size: 36px;
-	margin-bottom: 5px;
+	font-size: 40px;
+	margin: 0 auto 5px;
 	font-family: 'Shadows Into Light', cursive;
 }
 
-.banner-quote .pQuote::before {
+.banner-quote .pQuote::before, .hQuote::before {
 	color: #ccc;
     content: open-quote;
-    font-size: 3em;
+    font-size: 2.75em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
@@ -48,10 +52,10 @@ body {
     left: 18px;
 }
 
-.banner-quote .pQuote::after {
+.banner-quote .pQuote::after, .hQuote::after {
 	color: #ccc;
     content: close-quote;
-    font-size: 3em;
+    font-size: 2.75em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
@@ -128,19 +132,10 @@ body {
   animation: arrow1 3s infinite ease-out;
 }
 
-#myPhoto {
-  display: none;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  box-shadow: 6px 6px 5px 0px rgba(0,0,0,1);
-}
-
 .shrink-photo {
   width: 32px;
   height: 32px;
 }
-
 
 .star {
 	position: absolute;
@@ -217,9 +212,577 @@ body {
 	background: #010F18;
 }
 
+@media only screen and (max-width: 767px) {
+  .navbar {background: #010F18; height: 54px;} 
+  .navbar-toggle {margin-top: 10px;cursor: pointer;}
+  #navbarCollapse .navbar-nav {
+    margin: 5px 0;
+  } 
+  .navbar-inverse #navbarCollapse .navbar-nav li a {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  #navbarCollapse .navbar-nav>.personal-photo {
+    margin: 0;
+  }
+  .navbar-collapse {
+    background: #02293F;
+    text-align: center;
+    opacity: 0.85;
+  }
+  .about-content .item-circle p {
+    max-width: 20em;
+  }
+  #projects-timeline:before, .timeline-block .timeline-icon {
+    display: none;
+  }
+  .timeline-block .timeline-content {
+    width: 100%;
+  }
+  .projects .timeline-images {
+    position: inherit;
+    padding: 15px 0px;
+  }
+  .projects #projects-timeline {
+    padding: 0;
+  }
+  .timeline-images .fixmestick-img {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+  }
+  .timeline-images .web1 {
+    right: 0%;
+    margin-top: 15px;
+  }
+  .timeline-images .web2 {
+    margin-top: 5px;
+    right: 0%;
+  }
+  .timeline-images .web3 {
+    display: none;
+  }
+  .timeline-images .divrse {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position:relative;
+  }
+  .timeline-images .robot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+  }
+  .timeline-images .robot-vertical {
+    width: 50%;
+    height: 100%;
+    left: -24%;
+    margin-top: 5px;
+  }
+  .timeline-images .bomberman {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    left: 0;
+  }
+  .timeline-images .divrse-oculus, .timeline-images .divrse-myo, .timeline-images .robot-spread, .timeline-images .robot-horizontal, .timeline-images .lego {
+    display: none;
+  }
+  .projects .timeline-block {
+    margin: 4em 0 -2em;
+  }
+  .contact .contact-header p {
+    font-size: 20px;
+  }
+  .contact form {
+    padding: 0 5px;
+  }
+  .projects .panelFour-images {
+    position: inherit;
+  }
+  .panelGreen {
+    margin-bottom: 10px;
+  }
+  .banner-quote p {
+    font-size: 36px;
+  }
+  .quote-container .quote h2 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 463px) {
+  .navbar-inverse #navbarCollapse .navbar-nav li a {
+    margin: 0;
+  }
+  .contact form .btn {
+    width: 30%;
+  }
+  .quote-container .quote {
+    margin: 2% auto 14%;
+    max-width: 28em;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 463px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -678px -240px;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -700px -184px;
+  }
+}
+@media only screen and (min-width: 464px) and (max-width: 530px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -628px -248px;
+  }
+}
+
+@media only screen and (min-width: 531px) and (max-width: 767px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -602px -272px;
+    height: 588px;
+  }
+}
+
+@media only screen and (min-width: 464px) and (max-width: 767px) {
+  .navbar-inverse #navbarCollapse .navbar-nav li a {
+    display: inline;
+    margin: 5px 10px;
+  }
+  .navbar-inverse #navbarCollapse .navbar-nav li {
+    display: inline;
+  }
+  .navbar-collapse {
+    padding: 5px 0;
+  }
+  .contact form .btn {
+    width: 20%;
+  }
+  .portfolio {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+  .quote-container .quote {
+    margin: 2% auto 8%;
+    max-width: 28em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #navbarCollapse .navbar-nav li a {
+    margin: 10px;
+  }
+  #navbarCollapse .navbar-nav {
+    margin-left: 16%;
+  }
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -478px -268px;
+    height: 612px;
+  }
+  .timeline-images .fixmestick-img {
+    width: 40%;
+    height: 40%;
+    
+  }
+  .timeline-images .web1 {
+    right: 6%;
+    bottom: 40%;
+  }
+  .timeline-images .web2 {
+    right: 3%;
+    bottom: 25%;
+  }
+  .timeline-images .web3 {
+    right: 0%;
+    bottom: 10%;
+  }
+  .timeline-images .divrse {
+    width: 40%;
+    height: 25%;
+    left: 2%;
+    margin-top: 12%;
+  }
+  .timeline-images .divrse.divrse-oculus {
+    bottom: 37.5%;
+  }
+  .timeline-images .divrse.divrse-myo {
+    bottom: 10.5%;
+  }
+  .timeline-images .robot {
+    width: 45%;
+    height: 26%;
+    right: 0%;
+    top: 12%;
+  }
+  .timeline-images .robot-vertical {
+    width: 15%;
+    height: 26%;
+    top: 38%;
+    right: 0%;
+  }
+   .timeline-images .robot-spread {
+    top: initial;
+    bottom: 10%;
+    width: 45%;
+    height: 30%;
+    right: 0;
+   }
+   .timeline-images .robot-horizontal {
+    width: 30%;
+    height: 22%;
+    right: 15%;
+    top: 38%;
+  }
+   .timeline-images .lego {
+    display: none;
+  }
+  .timeline-images .bomberman {
+    width: 44%;
+    height: 40%;
+    margin: 5px 0;
+    top: 10%;
+  }
+  .timeline-images .bomberman-mvc {
+    top: 53%;
+    left: 0.2%;
+  }
+  .timeline-block .timeline-icon {
+    height: 44px;
+    width: 44px;
+    left: 47.25%;
+  }
+  .timeline-icon .icon-image {
+    top: 3px;
+  }
+  .timeline-icon .laptop-icon, .timeline-icon .computer-icon {
+    left: 3px;
+  }
+  .timeline-icon .robot-icon {
+    left: 2.75px;
+  }
+  .timeline-icon .vr-icon {
+    left: 5.5px;
+  }
+  .about-me .about-content p {
+    bottom: 216px;
+    font-size: 22px;
+  }
+  .about-me .item-circle h4 {
+    bottom: 272px;
+    font-size: 24px;
+  } 
+  .about-me .about-content {
+    margin: 0 16px;
+  }
+  .quote-container .quote {
+    margin: 2% auto 6%;
+    max-width: 28em;
+  }
+  .quote-container .quote h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1045px) {
+  .timeline-images .fixmestick-img {
+    width: 40%;
+    height: 55%;
+    
+  }
+  .timeline-images .web1 {
+    right: 4%;
+    top: 8%;
+  }
+  .timeline-images .web2 {
+    right: 2%;
+    top: 24%;
+  }
+  .timeline-images .web3 {
+    right: 0%;
+    top: 40%;
+  }
+  .timeline-images .divrse {
+    width: 40%;
+    height: 30%;
+    left: 2%;
+    margin-top: 4%;
+  }
+  .timeline-images .divrse.divrse-oculus {
+    bottom: 33.5%;
+  }
+  .timeline-images .divrse.divrse-myo {
+    bottom: 2.5%;
+  }
+  .timeline-images .robot {
+    width: 42%;
+    height: 34%;
+    right: 1.5%;
+    top: 6%;
+  }
+  .timeline-images .robot-vertical {
+    width: 12%;
+    height: 26%;
+    top: 40%;
+    right: 1.5%;
+  }
+   .timeline-images .robot-spread {
+    top: initial;
+    bottom: 0%;
+    width: 42%;
+    height: 40%;
+    right: 1.5%;
+   }
+   .timeline-images .robot-horizontal {
+    width: 33.5%;
+    height: 22%;
+    right: 10%;
+    top: 40%;
+  }
+   .timeline-images .lego {
+    display: none;
+  }
+  .timeline-images .bomberman {
+    width: 44%;
+    height: 40%;
+    margin: 5px 0;
+    top: 8%;
+  }
+  .timeline-images .bomberman-mvc {
+    top: 53%;
+    left: 0.2%;
+  }
+  .timeline-block .timeline-icon {
+    left: 46.9%;
+  }
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -408px -260px;
+  }
+  .about-me .about-content {
+    margin: 0 16px;
+  }
+  .about-me .about-content p {
+    bottom: 188px;
+    font-size: 22px;
+  }
+  .about-me .item-circle h4 {
+    bottom: 248px;
+    font-size: 24px;
+  } 
+  #navbarCollapse .navbar-nav {
+    margin-left: 15.5%;
+  }
+  .quote-container .quote {
+    margin: 2% auto 6%;
+  }
+  .quote-container .quote h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1046px) and (max-width: 1199px) {
+  #navbarCollapse .navbar-nav {
+    margin-left: 15.5%;
+  }
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: -354px -264px;
+  }
+  .timeline-images .web1 {
+    right: 0%;
+    top: 8%;
+  }
+  .timeline-images .web2 {
+    right: -2%;
+    top: 22%;
+  }
+  .timeline-images .web3 {
+    right: -4%;
+    top: 34%;
+  }
+  .timeline-images .divrse {
+    top: 2%;
+    left: 1%;
+    margin-top: 2%;
+  }
+  .timeline-images .divrse-oculus {
+    top: initial;
+    bottom: 32%;
+    left: 7.5%;
+  }
+  .timeline-images .divrse-myo {
+    top: initial;
+    bottom: 3%;
+    left: 7.5%;
+  }
+  .timeline-block .timeline-icon {
+    left: 46.8%;
+  }
+  .timeline-images .lego {
+    display: none;
+  }
+  .timeline-images .robot {
+    width: 42%;
+    height: 34%;
+    right: 1.5%;
+    top: 6%;
+  }
+  .timeline-images .robot-vertical {
+    width: 12%;
+    height: 26%;
+    top: 40%;
+    right: 1.5%;
+  }
+   .timeline-images .robot-spread {
+    top: initial;
+    bottom: 0%;
+    width: 42%;
+    height: 40%;
+    right: 1.5%;
+   }
+   .timeline-images .robot-horizontal {
+    width: 33.5%;
+    height: 22%;
+    right: 10%;
+    top: 40%;
+  }
+  .timeline-images .bomberman {
+    width: 44%;
+    height: 40%;
+    margin: 5px 0;
+    top: 6%;
+  }
+  .timeline-images .bomberman-mvc {
+    top: 50%;
+    left: 0.2%;
+  }
+  .quote-container .quote {
+    margin: 2% auto 6%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .portfolio-banner {
+    height: 638px;
+  }
+  .timeline-images .robot {
+    right: 0;
+    top: 0;
+  }
+  .timeline-images .robot-vertical {
+    right: 0;
+    top: initial;
+    bottom: 0;
+  }
+  .timeline-images .robot-spread {
+    right:10%;
+    top: initial;
+    bottom: 0;
+    width: 404px;
+    height: 306px;
+  }
+  .timeline-images .robot-horizontal {
+    right: 23%;
+    width: 256px;
+    height: 138px;
+    top: 0;
+  }
+  .timeline-images .lego {
+    right: 40.5%;
+    top: 5px;
+  }
+  .quote-container .quote {
+    margin: 2% auto 5%;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: 0px -88px;
+    background-size: cover;
+    height: 662px;
+  }
+  .portfolio {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote-container .quote {
+    max-width: 38em;
+  }
+  .quote-container .quote h2 {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: 0px -116px;
+    background-size: cover;
+    height: 698px;
+  }
+  .portfolio {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2099px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: 0px -168px;
+    background-size: cover;
+    height: 728px;
+  }
+  .portfolio {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 2100px) and (max-width: 2399px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: 0px -258px;
+    background-size: cover;
+    height: 748px;
+  }
+  .portfolio {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  .portfolio-banner {
+    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background-position: 0px -328px;
+    background-size: cover;
+    height: 748px;
+  }
+  .portfolio {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
+
 .navbar-inverse .navbar-nav>.active>a {
-	color: #1E90FF;
+	color: #007ae5;
 	background: none;
+  box-shadow: none;
 }
 
 .navbar-inverse .navbar-nav>.active>a:hover {
@@ -228,12 +791,7 @@ body {
 }
 
 .navbar-nav {
-	margin-left: 22%;
-  /*margin-left: 16%; when personal photo is present---*/
-}
-
-.navbar-nav>li {
-  /*margin: 24px 0; ---when personal photo is present---*/
+	margin-left: 23%;
 }
 
 .navbar-nav>.personal-photo {
@@ -241,11 +799,12 @@ body {
 }
 
 .navbar-inverse .navbar-nav li a {
-	font-size: 22px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 400;
 	margin: 10px 30px;
 	color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
+  cursor: pointer;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
@@ -257,6 +816,10 @@ body {
 	width: 100%;
 	background: #295AAA;
 	height: 100%;
+  box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .about-header {
@@ -284,6 +847,40 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.about-info h3 {
+  color: #d1d1d1;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 100;
+  font-family: 'Boogaloo', cursive;
+  margin-top: 20px;
+}
+
+.about-content h3 {
+  color: #ddd;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.personal-photo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 1em 0 2em;
+}
+
+#myPhoto {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,1);
+}
+
 .about-content {
 	margin: 0 auto;
 }
@@ -301,7 +898,15 @@ body {
 	height: 280px;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
+  box-shadow: inset  0 -7px 8px -6px #111,
+        inset  0 7px 8px -6px #111; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -webkit-box-shadow: inset  0 -7px 8px -6px #111,
+            inset  0 7px 8px -6px #111; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -moz-box-shadow: inset  0 -7px 8px -6px #111,
+           inset  0 7px 8px -6px #111; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -o-box-shadow: inset  0 -7px 8px -6px #111,
+          inset  0 7px 8px -6px #111; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .item-circle h4 {
@@ -311,6 +916,7 @@ body {
   bottom: 248px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 28px;
+  font-weight: 900;
 }
 
 .about-content p {
@@ -349,8 +955,41 @@ body {
 	opacity: 0.35;
 }
 
+.quote-container {
+  background: #008B8B;
+  height: 100%;
+  width: 100%;
+  /*box-shadow: inset  0 8px 8px -6px #333; /*Upper inset box-shadow to be removed with TSC banner image*/
+  /*-webkit-box-shadow: inset  0 8px 8px -6px #333; /*Upper inset box-shadow to be removed with TSC banner image*/
+  /*-moz-box-shadow:    inset  0 8px 8px -6px #333; /*Upper inset box-shadow to be removed with TSC banner image*/
+  /*-o-box-shadow:   inset  0 8px 8px -6px #333; /*Upper inset box-shadow to be removed with TSC banner image*/
+}
+
+.quote {
+  margin: 2% auto 4%;
+  max-width: 36em;
+  height: 100%;
+}
+
+.quote h2 {
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #ddd;
+}
+
+.quote span {
+  float: right;
+  margin-right: 5%;
+  font-size: 36px;
+}
+
 .projects {
 	background: #87CEEB;
+  box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .projects-header {
@@ -358,12 +997,11 @@ body {
 }
 
 .projects-header h3 {
-	color: #111;
+	color: #010F18;
 	text-align: center;
 	font-size: 48px;
 	margin: 30px 0 20px;
   font-family: 'Kaushan Script', cursive;
-
 }
 
 .projects-header p {
@@ -383,9 +1021,9 @@ body {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	height: 96.8%;
+	height: 97.75%;
 	width: 4px;
-	background: #777;
+	background: sienna;
 	margin: 25px auto;
 }
 
@@ -405,7 +1043,9 @@ body {
 	display: block;
 	position: absolute;
 	left: 47.35%;
-	box-shadow: 0 0 0 4px #f1f1f1, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 4px #f1f1f1, 
+              inset 0 2px 0 rgba(0, 0, 0, 0.08), 
+              0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .icon-image {
@@ -520,9 +1160,9 @@ body {
 
 .robot {
   right: -4.4%;
-  bottom: 61%;
-  width: 282px;
-  height: 188px;
+  top:0;
+  width: 306px;
+  height: 168px;
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
@@ -533,33 +1173,35 @@ body {
 .robot-vertical {
   height: 280px;
   width: 142px;
-  bottom: -1%;
+  bottom: 0%;
   right: -4.4%;
   z-index: 5;
+  top: initial;
 }
 
 .robot-spread {
   width: 442px;
   height: 320px;
-  right: 8%;
-  bottom: -1%;
+  right: 6.25%;
+  bottom: 0%;
   opacity: 0.9;
   z-index: 0;
+  top: initial;
 }
 
 .robot-horizontal {
   width: 305px;
-  height: 144px;
-  bottom: 71%;
-  right: 20%;
+  height: 132px;
+  right: 18.25%;
   z-index: 1;
+  top: 0;
 }
 
 .lego {
   width: 50px;
   height: 50px;
-  right: 42%;
-  bottom: 91.5%;
+  right: 40%;
+  top: 5px;
 }
 
 .web1 {
@@ -732,7 +1374,7 @@ body {
   .timeline-block:nth-child(even) .timeline-content {
     float: right;
   }
-  .timeline-content.is-hidden {
+  .timeline-content.is-hidden, .timeline-images.is-hidden {
     visibility: hidden;
   }
   .timeline-content.bounce-in {
@@ -741,6 +1383,12 @@ body {
     -moz-animation: cd-bouncer 0.6s;
     animation: cd-bouncer 0.6s;
   }
+  /*.timeline-images.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bouncer-image 0.6s;
+    -moz-animation: cd-bouncer-image 0.6s;
+    animation: cd-bouncer-image 0.6s;
+  }*/
 }
 
 @media only screen and (min-width: 1170px) {
@@ -750,6 +1398,11 @@ body {
     -moz-animation: cd-bouncer-inverse 0.6s;
     animation: cd-bouncer-inverse 0.6s;
   }
+  /*.timeline-block:nth-child(even) .fixmestick-img.bounce-in {
+    -webkit-animation: cd-bouncer-image-inverse 0.6s;
+    -moz-animation: cd-bouncer-image-inverse 0.6s;
+    animation: cd-bouncer-image-inverse 0.6s;
+  }*/
 }
 @-webkit-keyframes cd-bouncer {
   0% {
@@ -766,6 +1419,24 @@ body {
     -webkit-transform: translateX(0);
   }
 }
+/*@-webkit-keyframes cd-bouncer-image {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(0);
+  }
+}*/
 @-moz-keyframes cd-bouncer {
   0% {
     opacity: 0;
@@ -808,6 +1479,34 @@ body {
     transform: translateX(0);
   }
 }
+/*@keyframes cd-bouncer-image {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}*/
 @-webkit-keyframes cd-bouncer-inverse {
   0% {
     opacity: 0;
@@ -823,6 +1522,21 @@ body {
     -webkit-transform: translateX(0);
   }
 }
+/*@-webkit-keyframes cd-bouncer-image-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}*/
 @-moz-keyframes cd-bouncer-inverse {
   0% {
     opacity: 0;
@@ -865,9 +1579,44 @@ body {
     transform: translateX(0);
   }
 }
+/*@keyframes cd-bouncer-image-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}*/
 
 .contact {
 	background: #02404A;
+  box-shadow: inset  0 -8px 8px -6px #000,
+        inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -webkit-box-shadow: inset  0 -8px 8px -6px #000,
+            inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -moz-box-shadow: inset  0 -8px 8px -6px #000,
+           inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+  -o-box-shadow: inset  0 -8px 8px -6px #000,
+          inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .contact .container {
@@ -893,8 +1642,8 @@ body {
 
 .contact-line {
   width: 15%;
-  height: 1px;
-  background: #000;
+  height: 1.5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   text-align: center;
   margin: 10px auto 30px;
 }
@@ -912,6 +1661,7 @@ form .btn {
 	border: none;
 	font-weight: 100;
 	width: 15%;
+  font-family: 'Lato', sans-serif;
 }
 
 .form-group {
@@ -930,6 +1680,6 @@ form .btn {
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
-	padding: 16px 0 12px;
+	padding: 24px 0 12px;
 	font-family: 'Lato', sans-serif;
 }

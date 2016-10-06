@@ -5,20 +5,14 @@
 <head>
 
 	<title>Kartik Puranik Karkala</title>
+	<link rel="icon" type="image/png" href="images/kartikpuranik.jpg">
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Boogaloo|Nothing+You+Could+Do|Bungee|Permanent+Marker|Luckiest+Guy|Paytone+One|Asul|Sigmar+One|VT323" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Boogaloo|VT323|Lato:300|Source+Sans+Pro|Yatra+One|Indie+Flower|Shadows+Into+Light|Kaushan+Script" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 </head>
@@ -41,19 +35,16 @@
 			<div class="navbar-collapse collapse" id="navbarCollapse">
 				<ul class="nav navbar-nav" id="myNavbar">
 					<li class="active lift-up">
-						<a href="#myPortfolio">Home</a>
+						<a id="home-button" >Home</a>
 					</li>
 					<li class="lift-up">
-						<a href="#about">About Me</a>
-					</li>
-					<li class="personal-photo">
-						<img id="myPhoto" src="images/kartikpuranik.jpg" />
+						<a id="about-button" >About Me</a>
 					</li>
 					<li class="lift-up">
-						<a href="#myProjects">Projects</a>
+						<a id="projects-button" >Projects</a>
 					</li>
 					<li class="lift-up">
-						<a href="#contactMe">Contact</a>
+						<a id="contact-button" >Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -81,7 +72,7 @@
 				<p><span><i>- Albert Einstein</i></span></p>
 			</div>
 			<div class="row banner-buttons text-center">
-				<a class="btn btn-default" href="#contactMe">Contact Me</a>
+				<a class="btn btn-default" id="contactMe">Contact Me</a>
 				<a class="btn btn-default" href="Kartik_Puranik_Resume.pdf">View Resume</a>
 			</div>
 		</div>
@@ -98,19 +89,25 @@
 <!--About Me starts here -->
 <section>
 	<div class="about-me" id="about">
-		<div class="container">
+		<div class="container" id="aboutContainer">
 			<div class="about-header">
 				<h3>I am Kartik</h3>
 				<!--<p><q>If opportunity does not knock, build a door</q> <br />
 					<span><i>- Milton Berle</i></span></p>-->
 			</div>
+			<div class="personal-photo">
+				<img id="myPhoto" src="images/kartikpuranik.jpg" />
+			</div>
 			<div class="about-info">
+				<!--<h3>TECH FANATIC | WEB DEVELOPER | ASPIRING ENGINEER</h3>-->
 				<p> Brought to this exciting world on November 9th, 1995 in a tiny island known as Bahrain, I constantly strive to enhance my knowledge and skills in fields I am deeply passionate about.</p> 
 				<p> After my time in Bahrain for 16 years, I moved to Bengaluru, India to complete my International Baccalaureate with higher level subjects being Maths, Physics & Economics. This was a game-changing experience for me as I stayed in a boarding school and the IB syllabus was truly challenging. Nevertheless, it developed me to be who I am today and I am extremely grateful to everyone who made that happen.</p>
+				<p>Now, life has brought me to McGill University in Montreal, CA where I am currently combating through my Bachelors Degree in Computer Engineering. It has been an exhilerating experience so far, and I hope it continues the same way. I find myself always aiming to achieve high results, ensuring that the work I do is completely functional and logical.</p>
+				<div class="contact-line" style="margin-top: 4%; width: 50%;"></div>
 			</div>
-			<div class="contact-line"></div>
 		</div>
 		<div class="about-content">
+			<h3>Find out more about me in my profile below</h3>
 			<div class="row">
 				<div class="col-sm-4" id="education">
 					<div class="item-circle">
@@ -131,8 +128,8 @@
 					<div class="item-circle">
 						<img src="images/programming.jpg" />
 						<h4>Programming Skills</h4>
-						<p>Languages <span>include</span> Javascript, HTML, CSS, Java <br />
-						Libraries & Frameworks <span>include</span> Bootstrap, Foundation, jQuery</p>				
+						<p>Languages : Javascript, HTML, CSS, Java <br />
+						Libraries & Frameworks : Bootstrap, Foundation, jQuery</p>				
 					</div>				
 				</div>
 			</div>
@@ -155,8 +152,9 @@
 				<div class="col-sm-4" id="awards">
 					<div class="item-circle">
 						<img src="images/montreal.jpg" />
-						<h4>Scholarships & Awards</h4>
+						<h4>Awards</h4>
 						<p>Merit List Student throughout High School.</p>
+						<p>2nd Place in Institution of Engineers Tech Competition</p>
 					</div>
 				</div>
 			</div>
@@ -165,19 +163,28 @@
 </section>
 <!--About Me ends here -->
 
+<section>
+	<div class="quote-container">
+		<div class="container-fluid">
+			<div class="quote">
+				<h2 class="hQuote">If opportunity does not knock, build a door</h2>
+				<h2><span><i>- Milton Berle</i></span></h2>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Project section starts here -->
 <section>
 	<div class="projects" id="myProjects">
 		<div class="container">
 			<div class="projects-header">
 				<h3>My Featured Projects</h3>
-				<p><q>If opportunity does not knock, build a door</q> <br />
-					<span><i>- Milton Berle</i></span></p>
 			</div>
 			<div class="contact-line"></div>
 			<section id="projects-timeline">
 				<div class="timeline">
-					<div class="timeline-block">
+					<div class="timeline-block" id="fms-block">
 						<div class="timeline-icon">
 							<img class="icon-image laptop-icon" src = "images/laptop.png" />
 						</div>
@@ -185,13 +192,13 @@
 							<h2>FixMeStick Website </h2><span>June - August 2016</span>
 							<p>FixMeStick is an external, hardware device, for PC & Mac, that runs before your computer starts enabling it to remove viruses, spyware, trojans, rootkits, and malware that anti-virus programs often cannot. At FixMeStick, I redesigned and deployed the latest version of the website using Bootstrap, HTML, CSS & JavaScript. This lead to an increase in conversion rates, which drives me further to develop changes regularly and run A/B tests to prove validity of design choice. </p>						
 						</div>
-						<div class="timeline-images">
+						<div class="timeline-images panelOne-images">
 							<img class="fixmestick-img web1" src="images/fixmestick-web.png" />
 							<img class="fixmestick-img web2" src="images/fixmestick-web-2.png" />
 							<img class="fixmestick-img web3" src="images/fixmestick-web-3.png" />
 						</div>
 					</div>
-					<div class="timeline-block">
+					<div class="timeline-block" id="wearhacks-block">
 						<div class="timeline-icon">
 							<img class="icon-image vr-icon" src = "images/virtual-reality.png" />
 						</div>
@@ -205,13 +212,13 @@
 								<li>Networked and enhanced interest for future hackathons; seeked guidance from mentors who appreciated the concept and motivated us throughout.</li>
 							</ul>
 						</div>
-						<div class="timeline-images">
+						<div class="timeline-images panelTwo-images">
 							<img class="divrse" src="images/divrse.png" />
 							<img class="divrse divrse-oculus" src="images/divrse-2.jpg" />
 							<img class="divrse divrse-myo" src="images/divrse-3.jpg" />
 						</div>
 					</div>
-					<div class="timeline-block">
+					<div class="timeline-block" id="dpm-block">
 						<div class="timeline-icon">
 							<img class="icon-image robot-icon" src = "images/robot.png" />
 						</div>
@@ -224,7 +231,7 @@
 								<li>Regularly underwent testing for HungryBot, ensuring that the modules were generating valid outputs. Additionally, completed a chunk of the documentation required for the mechanical and the software divisions.</li>
 							</ul>													
 						</div>
-						<div class="timeline-images">
+						<div class="timeline-images panelThree-images">
 							<img class="robot" src="images/robot-main.jpg" />
 							<img class="robot robot-vertical" src="images/robot-main4.jpg" />
 							<img class="robot robot-spread" src="images/robot-main3.jpg" />
@@ -232,7 +239,7 @@
 							<img class="robot lego" src="images/lego.png" />
 						</div>
 					</div>
-					<div class="timeline-block">
+					<div class="timeline-block" id="ise-block">
 						<div class="timeline-icon">
 							<img class="icon-image computer-icon" src = "images/computer.png" />
 						</div>
@@ -245,7 +252,7 @@
 								<li>Mainly involved in the documentation and testing sections of the project</li>
 							</ul>	
 						</div>
-						<div class="timeline-images">
+						<div class="timeline-images panelFour-images">
 							<img class="bomberman" src="images/bomberman.png" />
 							<img class="bomberman bomberman-mvc" src="images/bomberman-2.png" />
 						</div>
@@ -267,25 +274,25 @@
 
 <!--Contact Me starts here -->
 <section>
-	<div class="contact" id="contactMe">
+	<div class="contact" id="myContact">
 		<div class="container">
 			<div class="contact-header">
 				<h3>Contact</h3>
 				<p>I look forward to hearing from you. </p>
 			</div>
 			<div class="contact-line"></div>
-			<form action="mailto:kartik.karkala@mail.mcgill.ca" method="post" enctype="text/plain">
+			<form action="https://formspree.io/kartik.karkala@mail.mcgill.ca" method="POST">
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Name">
+				    <input name="Name" class="form-control" placeholder="Name">
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" placeholder="Email">
+				    <input name="Email Adress" class="form-control" placeholder="Email">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Subject">
+				    <input name="Subject" class="form-control" placeholder="Subject">
 				  </div>
 				  <div class="form-group">
-				    <textarea type="text" rows="4" class="form-control message-form" placeholder="Message"></textarea>
+				    <textarea name="Message" rows="4" class="form-control message-form" placeholder="Message"></textarea>
 				  </div>
 				  <button type="submit" class="btn btn-default">Send</button>
 			</form>
