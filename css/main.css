@@ -265,21 +265,21 @@ body {
   .timeline-images .web3 {
     display: none;
   }
-  .timeline-images .divrse {
+  #wearhacks-block .panelTwo-images iframe {
     width: 100%;
     height: 100%;
     left: 0;
     position:relative;
   }
   .timeline-images .robot {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: initial;
     right: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
   }
   .timeline-images .robot-vertical {
-    width: 50%;
+    width: 100%;
     height: 100%;
     left: -24%;
     margin-top: 5px;
@@ -398,6 +398,14 @@ body {
     height: 40%;
     
   }
+  #fms-block .timeline-images span {
+    top: 12%;
+  }
+
+  #fms-block .timeline-images i {
+    right: 20%;
+    top: 8%;
+  }
   .timeline-images .web1 {
     right: 6%;
     bottom: 40%;
@@ -411,6 +419,12 @@ body {
     bottom: 10%;
   }
   .timeline-images .divrse {
+    width: 40%;
+    height: 25%;
+    left: 2%;
+    margin-top: 12%;
+  }
+  #wearhacks-block .panelTwo-images iframe {
     width: 40%;
     height: 25%;
     left: 2%;
@@ -505,17 +519,23 @@ body {
   }
   .timeline-images .web1 {
     right: 4%;
-    top: 8%;
+    top: 12%;
   }
   .timeline-images .web2 {
     right: 2%;
-    top: 24%;
+    top: 28%;
   }
   .timeline-images .web3 {
     right: 0%;
-    top: 40%;
+    top: 44%;
   }
   .timeline-images .divrse {
+    width: 40%;
+    height: 30%;
+    left: 2%;
+    margin-top: 4%;
+  }
+  #wearhacks-block .panelTwo-images iframe {
     width: 40%;
     height: 30%;
     left: 2%;
@@ -599,17 +619,24 @@ body {
   }
   .timeline-images .web1 {
     right: 0%;
-    top: 8%;
+    top: 12%;
   }
   .timeline-images .web2 {
     right: -2%;
-    top: 22%;
+    top: 26%;
   }
   .timeline-images .web3 {
     right: -4%;
-    top: 34%;
+    top: 38%;
   }
   .timeline-images .divrse {
+    top: 2%;
+    left: 1%;
+    margin-top: 2%;
+  }
+  #wearhacks-block .panelTwo-images iframe {
+    width: 43%;
+    height: 33%;
     top: 2%;
     left: 1%;
     margin-top: 2%;
@@ -1178,7 +1205,6 @@ body {
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  float: right;
   z-index: 2;
 }
 
