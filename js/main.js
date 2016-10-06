@@ -9,6 +9,9 @@ jQuery(document).ready(function($){
 	  } 
 	  else {
 	  	$('nav').css('box-shadow', 'none');
+	  	$('nav').css('-webkit-box-shadow', 'none');
+	  	$('nav').css('-moz-box-shadow', 'none');
+	  	$('nav').css('-o-box-shadow', 'none');
 	    $('#shrinkable-nav').removeClass('shrink', 600);
 	  }
 	});
@@ -22,9 +25,12 @@ jQuery(document).ready(function($){
 	  	$('nav').css('box-shadow', '0 8px 8px -6px #111');
 	  } else {
 	  	$('nav').css('box-shadow', 'none');
+	  	$('nav').css('-webkit-box-shadow', 'none');
+	  	$('nav').css('-moz-box-shadow', 'none');
+	  	$('nav').css('-o-box-shadow', 'none');
 	    $('#shrinkable-nav').removeClass('shrink', 600);
 	  }
-	  $('body').scrollspy({ target: '#shrinkable-nav' });
+	  $('body').scrollspy({ target: '#shrinkable-nav'});
 	});
 
 	$(function() {
@@ -61,6 +67,7 @@ jQuery(document).ready(function($){
 		$('html, body').animate({
 		    scrollTop: $('#myProjects').offset().top-50
 		}, 1000);
+		return false;
 	});
 
 	$('#home-button').on('click', function() {
@@ -68,6 +75,7 @@ jQuery(document).ready(function($){
 		$('html, body').animate({
 		    scrollTop: $('#myPortfolio').offset().top-50
 		}, 1000);
+		return false;
 	});
 
 	$('#contact-button, #contactMe').on('click', function() {
@@ -75,6 +83,7 @@ jQuery(document).ready(function($){
 		$('html, body').animate({
 		    scrollTop: $('#myContact').offset().top-50
 		}, 1000);
+		return false;
 	});
 
 	var bouncingBlock = $('.timeline-block'),

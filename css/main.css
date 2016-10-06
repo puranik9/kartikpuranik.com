@@ -8,9 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-nav {
-}
-
 .portfolio-banner {
 	background: transparent url(../images/banner-background.jpg) top center no-repeat;
 	background-size: cover;
@@ -288,7 +285,7 @@ nav {
     margin: 5px 0;
     left: 0;
   }
-  .timeline-images .divrse-oculus, .timeline-images .divrse-myo, .timeline-images .robot-spread, .timeline-images .robot-horizontal, .timeline-images .lego {
+  .timeline-images .divrse-oculus, .timeline-images .divrse-myo /*.timeline-images .robot-spread, .timeline-images .robot-horizontal, .timeline-images .lego*/ {
     display: none;
   }
   .projects .timeline-block {
@@ -422,16 +419,16 @@ nav {
   .timeline-images .robot {
     width: 45%;
     height: 26%;
-    right: 0%;
     top: 12%;
+    right: 0%;
   }
   .timeline-images .robot-vertical {
-    width: 15%;
-    height: 26%;
-    top: 38%;
-    right: 0%;
+    width: 20%;
+    height: 30%;
+    top: 40%;
+    right: 13%;
   }
-   .timeline-images .robot-spread {
+  /*.timeline-images .robot-spread {
     top: initial;
     bottom: 10%;
     width: 45%;
@@ -446,7 +443,7 @@ nav {
   }
    .timeline-images .lego {
     display: none;
-  }
+  }*/
   .timeline-images .bomberman {
     width: 44%;
     height: 40%;
@@ -525,23 +522,18 @@ nav {
     bottom: 2.5%;
   }
   .timeline-images .robot {
-    width: 42%;
-    height: 34%;
-    right: 1.5%;
     top: 6%;
+    right: 3.5%;
   }
   .timeline-images .robot-vertical {
-    width: 12%;
-    height: 26%;
-    top: 40%;
-    right: 1.5%;
+    top: 46%;
+    right: 14.5%;
   }
-   .timeline-images .robot-spread {
+  /*.timeline-images .robot-spread {
     top: initial;
     bottom: 0%;
     width: 42%;
     height: 40%;
-    right: 1.5%;
    }
    .timeline-images .robot-horizontal {
     width: 33.5%;
@@ -551,7 +543,7 @@ nav {
   }
    .timeline-images .lego {
     display: none;
-  }
+  }*/
   .timeline-images .bomberman {
     width: 44%;
     height: 40%;
@@ -633,18 +625,14 @@ nav {
     display: none;
   }
   .timeline-images .robot {
-    width: 42%;
-    height: 34%;
-    right: 1.5%;
     top: 6%;
+    right: 3.5%;
   }
   .timeline-images .robot-vertical {
-    width: 12%;
-    height: 26%;
-    top: 40%;
-    right: 1.5%;
+    top: 46%;
+    right: 14.5%;
   }
-   .timeline-images .robot-spread {
+  /*.timeline-images .robot-spread {
     top: initial;
     bottom: 0%;
     width: 42%;
@@ -662,7 +650,7 @@ nav {
     height: 40%;
     margin: 5px 0;
     top: 6%;
-  }
+  }*/
   .timeline-images .bomberman-mvc {
     top: 50%;
     left: 0.2%;
@@ -676,20 +664,11 @@ nav {
   .portfolio-banner {
     height: 638px;
   }
-  .timeline-images .robot {
-    right: 0;
-    top: 0;
-  }
-  .timeline-images .robot-vertical {
-    right: 0;
-    top: initial;
-    bottom: 0;
-  }
-  .timeline-images .robot-spread {
+  /*.timeline-images .robot-spread {
     right:10%;
     top: initial;
     bottom: 0;
-    width: 404px;
+    width: 360px;
     height: 306px;
   }
   .timeline-images .robot-horizontal {
@@ -701,7 +680,7 @@ nav {
   .timeline-images .lego {
     right: 40.5%;
     top: 5px;
-  }
+  }*/
   .quote-container .quote {
     margin: 2% auto 5%;
   }
@@ -1159,10 +1138,10 @@ nav {
 }
 
 .robot {
-  right: -4.4%;
-  top:0;
-  width: 306px;
-  height: 168px;
+  right: 6.5%;
+  top:0.25%;
+  width: 360px;
+  height: 204px;
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
@@ -1171,10 +1150,10 @@ nav {
 }
 
 .robot-vertical {
-  height: 280px;
-  width: 142px;
+  height: 236px;
+  width: 152px;
   bottom: 0%;
-  right: -4.4%;
+  right: 15%;
   z-index: 5;
   top: initial;
 }
