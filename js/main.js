@@ -65,7 +65,7 @@ jQuery(document).ready(function($){
 	$('#projects-button').on('click', function() {
 		//$('#projects-button').attr('href', '#myProjects');
 		$('html, body').animate({
-		    scrollTop: $('#myProjects').offset().top-50
+		    scrollTop: $('#myProjects').offset().top-48
 		}, 1000);
 		return false;
 	});

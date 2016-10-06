@@ -209,6 +209,12 @@ body {
 	background: #010F18;
 }
 
+.shrink .navbar-nav>.active>a {
+  color: #007ae5;
+  background: #010F18;
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar {background: #010F18; height: 54px;} 
   .navbar-toggle {margin-top: 10px;cursor: pointer;}
@@ -784,11 +790,17 @@ body {
 	color: #fff;
 	font-family: 'Lato', sans-serif;
   cursor: pointer;
+  box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:visited {
+  background: none;
+  color: #007ae5;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
 	color: #1E90FF;
-  background: none;
+  box-shadow: none;
 }
 
 .about-me {
