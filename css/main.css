@@ -1106,25 +1106,29 @@ body {
 }
 
 .divrse {
-  width: 400px;
-  height: 240px;
-  float:left;
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   left: 5%;
-  margin-top:7%;
+  
+}
+
+.panelTwo-images iframe {
+  float:left;
+  margin-top:4%;
+  position: absolute;
+  left: 2%;
 }
 
 .divrse-oculus {
-  bottom: 11.2%;
+  bottom: 8%;
   left: 0.2%;
   width: 268px;
   height: 188px;
 }
 
 .divrse-myo {
-  bottom: 11.2%;
+  bottom: 8%;
   left: 24%;
   width: 268px;
   height: 188px;
@@ -1149,9 +1153,26 @@ body {
   padding: 0 5px;
 }
 
+.timeline-images i {
+  font-size: 44px;
+  right: 13%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-54deg);
+}
+
+.timeline-images span {
+  font-size: 16px;
+  right: 0%;
+  position: absolute;
+  top: 5%;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
 .robot {
   right: 6.5%;
-  top:0.25%;
+  top:2%;
   width: 360px;
   height: 204px;
   position: absolute;
@@ -1162,15 +1183,15 @@ body {
 }
 
 .robot-vertical {
-  height: 236px;
-  width: 152px;
-  bottom: 0%;
-  right: 15%;
+  height: 216px;
+  width: 140px;
+  bottom: 0;
+  right: 16%;
   z-index: 5;
   top: initial;
 }
 
-.robot-spread {
+/*.robot-spread {
   width: 442px;
   height: 320px;
   right: 6.25%;
@@ -1193,7 +1214,7 @@ body {
   height: 50px;
   right: 40%;
   top: 5px;
-}
+}*/
 
 .web1 {
   right: 8%;
@@ -1221,10 +1242,31 @@ body {
 }
 
 .timeline-content p {
-  margin: 20px 0;
+  margin: 20px 0 15px;
 	color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+}
+
+.timeline-content a {
+  text-decoration: none;
+  color: #77c7e8;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+.linker {
+  margin-bottom: 20px;
+}
+
+.timeline-content i {
+  color: #010f18;
+  margin-right: 10px;
+}
+
+.timeline-content a:hover {
+  color: #FFD700;
 }
 
 .timeline-content ul {
