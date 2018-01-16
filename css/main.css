@@ -8,14 +8,23 @@ body {
   overflow-x: hidden;
 }
 
+#portfolioContainer, #aboutContainer, #projectsContainer, #contactContainer {
+    padding-top: 6%;
+}
+
 .portfolio-banner {
-	background: transparent url(../images/banner-background.jpg) top center no-repeat;
+	background: transparent url(../images/banner-background.jpeg) top center no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 638px;
 	padding-top:100px;
 	margin-bottom: 0;
-  position:relative;
+    position:relative;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
 }
 
 .portfolio {
@@ -25,11 +34,11 @@ body {
 
 .banner-quote {
 	max-width: 52em;
-	margin: 0 auto 20px;
+	margin: 4% auto 2%;
 }
 
 .banner-quote p {
-	color: #fff;
+	color: #FFFFFF;
 	text-align: center;
 	font-size: 40px;
 	margin: 0 auto 5px;
@@ -63,7 +72,7 @@ body {
 }
 
 .banner-quote span {
-	color: #fff;
+	color: #FFFFFF;
 	font-size: 32px;
 	float:right;
 	margin-top: 5px;
@@ -89,15 +98,15 @@ body {
   background: inherit;
   font-size: 18px;
   padding: 8px 16px;
-  color: #fff;
+  color: #FFFFFF;
   width: 45%;
   font-weight: 200;
   font-family: 'Lato', sans-serif;
 }
 
 .banner-buttons .btn:hover {
-  background: #f1f1f1;
-  color: #000;
+  background: #F1F1F1;
+  color: #0E0B16;
 }
 
 .rocket-img {
@@ -111,7 +120,7 @@ body {
 }
 
 .down-arrow i {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 42px;
 }
 
@@ -134,6 +143,8 @@ body {
   height: 32px;
 }
 
+/*
+Banner - Stars
 .star {
 	position: absolute;
 	background: url(../images/star.png) no-repeat;
@@ -193,11 +204,11 @@ body {
 	height: 70px;
 	top: 320px;
 	right: 162px;
-}
+}*/
 
 .navbar {
 	margin-bottom: 0;
-	background: none;
+	background: #0E0B16;
 	border: none;
 	border-radius: 0px;
 	height: 70px;
@@ -206,17 +217,17 @@ body {
 }
 
 .shrink {
-	background: #010F18;
+	background: #0E0B16;
 }
 
 .shrink .navbar-nav>.active>a {
-  color: #007ae5;
-  background: #010F18;
-  box-shadow: none;
+    color: #007ae5;
+    background: #0E0B16;
+    box-shadow: none;
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar {background: #010F18; height: 54px;} 
+  .navbar {background: #0E0B16; height: 54px;} 
   .navbar-toggle {margin-top: 10px;cursor: pointer;}
   #navbarCollapse .navbar-nav {
     margin: 5px 0;
@@ -312,22 +323,25 @@ body {
   .banner-quote p {
     font-size: 36px;
   }
-  .quote-container .quote h2 {
+  .quote-container .quote h2, .quote-container .quote h2 span {
     font-size: 32px;
   }
 }
 
 @media only screen and (max-width: 463px) {
-  .navbar-inverse #navbarCollapse .navbar-nav li a {
-    margin: 0;
-  }
-  .contact form .btn {
-    width: 30%;
-  }
-  .quote-container .quote {
-    margin: 2% auto 14%;
-    max-width: 28em;
-  }
+    .navbar-inverse #navbarCollapse .navbar-nav li a {
+        margin: 0;
+    }
+    .contact form .btn {
+        width: 30%;
+    }
+    .quote-container .quote {
+        margin: 4% auto 14%;
+        max-width: 28em;
+    }
+    .quote-container .quote h2, .quote-container .quote h2 span {
+        font-size: 28px;
+    }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 463px) {
@@ -376,7 +390,7 @@ body {
     margin-bottom: 2%;
   }
   .quote-container .quote {
-    margin: 2% auto 8%;
+    margin: 2% auto 10%;
     max-width: 28em;
   }
 }
@@ -503,11 +517,11 @@ body {
     margin: 0 16px;
   }
   .quote-container .quote {
-    margin: 2% auto 6%;
-    max-width: 28em;
+    margin: 2% auto 8%;
+    max-width: 32em;
   }
-  .quote-container .quote h2 {
-    font-size: 36px;
+  .quote-container .quote h2, .quote-container .quote h2 span {
+    font-size: 34px;
   }
 }
 
@@ -715,7 +729,7 @@ body {
     top: 5px;
   }*/
   .quote-container .quote {
-    margin: 2% auto 5%;
+    margin: 5% auto 8%;
   }
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {
@@ -733,7 +747,7 @@ body {
 
 @media only screen and (min-width: 1600px) {
   .quote-container .quote {
-    max-width: 38em;
+    max-width: 40em;
   }
   .quote-container .quote h2 {
     font-size: 46px;
@@ -814,7 +828,7 @@ body {
 	font-size: 20px;
 	font-weight: 400;
 	margin: 10px 30px;
-	color: #fff;
+	color: #FFFFFF;
 	font-family: 'Lato', sans-serif;
   cursor: pointer;
   box-shadow: none;
@@ -831,13 +845,13 @@ body {
 }
 
 .about-me {
-	width: 100%;
-	background: #295AAA;
-	height: 100%;
-  box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    width: 100%;
+    background: #FFFFFF;
+    height: 100%;
+    box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .about-header {
@@ -845,11 +859,11 @@ body {
 }
 
 .about-header h3 {
-	color: #fff;
-	text-align: center;
-	font-size: 48px;
-	margin: 30px 0 20px;
-  font-family: 'Kaushan Script', cursive;
+    color: #0E0B16;
+    text-align: center;
+    font-size: 48px;
+    margin: 30px 0 20px;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .about-info {
@@ -858,7 +872,7 @@ body {
 }
 
 .about-info p {
-  color: #fff;
+  color: #0E0B16;
   text-align: center;
   font-size: 20px;
   font-weight: 100;
@@ -866,7 +880,7 @@ body {
 }
 
 .about-info h3 {
-  color: #d1d1d1;
+  color: #0E0B16;
   text-align: center;
   font-size: 26px;
   font-weight: 100;
@@ -875,7 +889,7 @@ body {
 }
 
 .about-content h3 {
-  color: #ddd;
+  color: #0E0B16;
   text-align: center;
   font-size: 26px;
   font-weight: 400;
@@ -911,24 +925,23 @@ body {
 }
 
 .item-circle {
-	background: #f1f1f1;
-	width: auto;
-	height: 280px;
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 2px;
-  box-shadow: inset  0 -7px 8px -6px #111,
+    background: none;
+    width: auto;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset  0 -7px 8px -6px #111,
         inset  0 7px 8px -6px #111; 
-  -webkit-box-shadow: inset  0 -7px 8px -6px #111,
+    -webkit-box-shadow: inset  0 -7px 8px -6px #111,
             inset  0 7px 8px -6px #111; 
-  -moz-box-shadow: inset  0 -7px 8px -6px #111,
+    -moz-box-shadow: inset  0 -7px 8px -6px #111,
            inset  0 7px 8px -6px #111; 
-  -o-box-shadow: inset  0 -7px 8px -6px #111,
+    -o-box-shadow: inset  0 -7px 8px -6px #111,
           inset  0 7px 8px -6px #111; 
 }
 
 .item-circle h4 {
-  color: #021019;
+  color: #0E0B16;
   position: relative;
   z-index: 99;
   bottom: 248px;
@@ -943,7 +956,7 @@ body {
 	text-align: center;
 	max-width: 18em;
 	font-size: 23px;
-	color: #021019;
+	color: #0E0B16;
 	font-weight: 700;
 	position: relative;
 	margin: 0 auto;
@@ -974,7 +987,7 @@ body {
 }
 
 .quote-container {
-  background: #008B8B;
+  background: #0E0B16;
   height: 100%;
   width: 100%;
   /*box-shadow: inset  0 8px 8px -6px #333; /*Upper inset box-shadow to be removed with TSC banner image*/
@@ -984,7 +997,7 @@ body {
 }
 
 .quote {
-  margin: 2% auto 4%;
+  margin: 5% auto;
   max-width: 36em;
   height: 100%;
 }
@@ -993,7 +1006,7 @@ body {
   text-align: center;
   font-size: 42px;
   font-family: 'Shadows Into Light', cursive;
-  color: #ddd;
+  color: #FFFFFF;
 }
 
 .quote span {
@@ -1003,11 +1016,11 @@ body {
 }
 
 .projects {
-	background: #87CEEB;
-  box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    background: #FFFFFF;
+    box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -webkit-box-shadow: inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -moz-box-shadow:    inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
+    -o-box-shadow:   inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
 .projects-header {
@@ -1015,7 +1028,7 @@ body {
 }
 
 .projects-header h3 {
-	color: #010F18;
+	color: #0E0B16;
 	text-align: center;
 	font-size: 48px;
 	margin: 30px 0 20px;
@@ -1137,7 +1150,6 @@ body {
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   left: 5%;
-  
 }
 
 .panelTwo-images iframe {
@@ -1261,7 +1273,7 @@ body {
 }
 
 .timeline-content h2 {
-	color: #fff;
+	color: #FFFFFF;
   margin-bottom: 2px;
   font-size: 36px;
   font-family: 'Boogaloo', cursive;
@@ -1269,7 +1281,7 @@ body {
 
 .timeline-content p {
   margin: 20px 0 15px;
-	color: #fff;
+	color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
@@ -1287,7 +1299,7 @@ body {
 }
 
 .timeline-content i {
-  color: #010f18;
+  color: #0E0B16;
   margin-right: 10px;
 }
 
@@ -1300,12 +1312,12 @@ body {
 }
 
 .timeline-content ul li {
-	color: #fff;
+	color: #FFFFFF;
   font-family: 'Lato', sans-serif;
 }
 
 .timeline-content span {
-	color: #fff;
+	color: #FFFFFF;
 	font-size: 14px;
   font-family: 'Lato', sans-serif;
 }
@@ -1667,14 +1679,14 @@ body {
 }*/
 
 .contact {
-	background: #02404A;
-  box-shadow: inset  0 -8px 8px -6px #000,
+    background: #0E0B16;
+    box-shadow: inset  0 -8px 8px -6px #000,
         inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -webkit-box-shadow: inset  0 -8px 8px -6px #000,
+    -webkit-box-shadow: inset  0 -8px 8px -6px #000,
             inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -moz-box-shadow: inset  0 -8px 8px -6px #000,
+    -moz-box-shadow: inset  0 -8px 8px -6px #000,
            inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
-  -o-box-shadow: inset  0 -8px 8px -6px #000,
+    -o-box-shadow: inset  0 -8px 8px -6px #000,
           inset  0 8px 8px -6px #000; /*Upper inset box-shadow to be removed with TSC banner image*/
 }
 
@@ -1683,28 +1695,28 @@ body {
 }
 
 .contact-header h3 {
-	color: #fff;
-	text-align: center;
-	font-size: 48px;
-	margin: 30px 0 20px;
-  font-family: 'Kaushan Script', cursive;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin: 30px 0 20px;
+    font-family: 'Kaushan Script', cursive;
 
 }
 
 .contact-header p {
-	color: #fff;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 100;
-  font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
 }
 
 .contact-line {
-  width: 15%;
-  height: 1.5px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  text-align: center;
-  margin: 10px auto 30px;
+    width: 15%;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    text-align: center;
+    margin: 10px auto 30px;
 }
 
 form {
@@ -1712,19 +1724,32 @@ form {
 	margin: 0 auto;
 }
 
-form .btn {
-	float: right;
-	border-radius: 0;
-	background: #095987;
-	color: #fff;
-	border: none;
-	font-weight: 100;
-	width: 15%;
-  font-family: 'Lato', sans-serif;
+.form-group-btn .btn {
+    border-radius: 0px;
+    background: inherit;
+    font-size: 18px;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    outline: 0;
+}
+
+.form-group-btn .btn:hover{
+    background: #f1f1f1;
+    color: #0E0B16;
 }
 
 .form-group {
 	margin-bottom: 10px;
+}
+
+.form-group-btn {
+    margin-bottom: 10%;
+    position: relative;
 }
 
 .form-control {
@@ -1732,11 +1757,11 @@ form .btn {
 }
 
 .footer-container {
-	background: #010F18;
+	background: #0E0B16;
 }
 
 .footer-container p {
-	color: #fff;
+	color: #FFFFFF;
 	font-size: 18px;
 	text-align: center;
 	padding: 24px 0 12px;
