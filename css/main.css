@@ -346,26 +346,26 @@ Banner - Stars
 
 @media only screen and (min-width: 360px) and (max-width: 463px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -678px -240px;
   }
 }
 @media only screen and (max-width: 359px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -700px -184px;
   }
 }
 @media only screen and (min-width: 464px) and (max-width: 530px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -628px -248px;
   }
 }
 
 @media only screen and (min-width: 531px) and (max-width: 767px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -602px -272px;
     height: 588px;
   }
@@ -403,7 +403,7 @@ Banner - Stars
     margin-left: 16%;
   }
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -478px -268px;
     height: 612px;
   }
@@ -598,7 +598,7 @@ Banner - Stars
     left: 46.9%;
   }
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -408px -260px;
   }
   .about-me .about-content {
@@ -628,7 +628,7 @@ Banner - Stars
     margin-left: 15.5%;
   }
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: -354px -264px;
   }
   .timeline-images .web1 {
@@ -734,7 +734,7 @@ Banner - Stars
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: 0px -88px;
     background-size: cover;
     height: 662px;
@@ -756,7 +756,7 @@ Banner - Stars
 
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: 0px -116px;
     background-size: cover;
     height: 698px;
@@ -769,7 +769,7 @@ Banner - Stars
 
 @media only screen and (min-width: 1800px) and (max-width: 2099px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: 0px -168px;
     background-size: cover;
     height: 728px;
@@ -782,7 +782,7 @@ Banner - Stars
 
 @media only screen and (min-width: 2100px) and (max-width: 2399px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: 0px -258px;
     background-size: cover;
     height: 748px;
@@ -794,7 +794,7 @@ Banner - Stars
 }
 @media only screen and (min-width: 2400px) {
   .portfolio-banner {
-    background: transparent url(../images/banner-background.jpg) center no-repeat;
+    background: transparent url(../images/banner-background.jpeg) center no-repeat;
     background-position: 0px -328px;
     background-size: cover;
     height: 748px;
@@ -907,10 +907,9 @@ Banner - Stars
 }
 
 #myPhoto {
-  width: 220px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  box-shadow: 6px 6px 5px 0px rgba(0,0,0,1);
 }
 
 .about-content {
