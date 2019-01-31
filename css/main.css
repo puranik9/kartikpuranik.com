@@ -1161,7 +1161,8 @@ Banner - Stars
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  left: 0.2%;
+  right: 2em;
+  top: 10em;
 }
 
 .fixmestick-img {
@@ -1177,26 +1178,26 @@ Banner - Stars
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  left: 5%;
 }
 
 .panelTwo-images iframe {
   float:left;
   margin-top:4%;
   position: absolute;
-  left: 2%;
+  right: 2%;
+  top: 0%;
 }
 
 .divrse-oculus {
   bottom: 8%;
-  left: 0.2%;
+  right: 0.2%;
   width: 268px;
   height: 188px;
 }
 
 .divrse-myo {
   bottom: 8%;
-  left: 24%;
+  right: 24%;
   width: 268px;
   height: 188px;
 }
@@ -1208,12 +1209,14 @@ Banner - Stars
   position: absolute;
   border: 1px solid #333;
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  left: 0.2%;
+  right: 9.8%;
+  top: 0;
 }
 
 .bomberman-mvc {
-  bottom: 0%;
-  left:12.5%;
+  bottom: 0;
+  right: 0.2%;
+  top: auto;
 }
 
 .timeline-images {
@@ -1238,7 +1241,7 @@ Banner - Stars
 }
 
 .robot {
-  right: 6.5%;
+  left: 6.5%;
   top:2%;
   width: 360px;
   height: 204px;
@@ -1252,7 +1255,7 @@ Banner - Stars
   height: 216px;
   width: 140px;
   bottom: 0;
-  right: 16%;
+  left: 16%;
   z-index: 5;
   top: initial;
 }
@@ -1283,19 +1286,19 @@ Banner - Stars
 }*/
 
 .web1 {
-  right: 8%;
+  left: 0.2%;
   bottom: 22%;
   z-index: 1;
 }
 
 .web2 {
-  right: 4%;
+  left: 4%;
   bottom: 11%;
   z-index: 2;
 }
 
 .web3 {
-  right: 0.2%;
+  left: 8%;
   bottom: 0%;
   z-index: 3;
 }
