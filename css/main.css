@@ -295,6 +295,13 @@ Banner - Stars
     left: -24%;
     margin-top: 5px;
   }
+  .timelines-images .g2t-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    left: 0;
+  }
   .timeline-images .bomberman {
     position: relative;
     width: 100%;
@@ -478,6 +485,12 @@ Banner - Stars
    .timeline-images .lego {
     display: none;
   }*/
+  .timeline-images .g2t-img {
+    width: 44%;
+    height: 40%;
+    margin: 5px 0;
+    top: 10%;
+  }
   .timeline-images .bomberman {
     width: 44%;
     height: 40%;
@@ -584,6 +597,12 @@ Banner - Stars
    .timeline-images .lego {
     display: none;
   }*/
+  .timeline-images .g2t-img {
+    width: 44%;
+    height: 40%;
+    margin: 5px 0;
+    top: 8%;
+  }
   .timeline-images .bomberman {
     width: 44%;
     height: 40%;
@@ -1133,6 +1152,16 @@ Banner - Stars
 
 .timeline-content .no-margin {
   margin: 4px 0;
+}
+
+.g2t-img {
+  width: 400px;
+  height: 240px;
+  float:left;
+  position: absolute;
+  border: 1px solid #333;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  left: 0.2%;
 }
 
 .fixmestick-img {
